@@ -30,7 +30,7 @@ public class pegawaiList extends javax.swing.JFrame {
      */
     public pegawaiList() {
         initComponents();
-        this.dbManager = new DatabaseManager("jdbc:mysql://127.0.0.1:3306/simpanpinjam", "root", "12345678");
+        this.dbManager = new DatabaseManager();
         this.dmlSql = new DMLSQL(this.dbManager);
         datatable();
     }

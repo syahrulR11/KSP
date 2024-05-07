@@ -14,15 +14,9 @@ import java.sql.SQLException;
  */
 public class DatabaseManager {
     private Connection connection;
-    private String url;
-    private String username;
-    private String password;
-
-    public DatabaseManager(String url, String username, String password) {
-        this.url = url;
-        this.username = username;
-        this.password = password;
-    }
+    private String url = "jdbc:mysql://127.0.0.1:3306/simpanpinjam";
+    private String username = "root";
+    private String password = "12345678";
 
     public Connection getConnection() throws SQLException {
         try {

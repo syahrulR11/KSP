@@ -29,7 +29,7 @@ public class jabatanForm extends javax.swing.JPanel {
      */
     public jabatanForm(JDialog parentDialog, String id) {
         initComponents();
-        this.dbManager = new DatabaseManager("jdbc:mysql://127.0.0.1:3306/simpanpinjam", "root", "12345678");
+        this.dbManager = new DatabaseManager();
         this.dmlSql = new DMLSQL(this.dbManager);
         if (id != null) {
             this.id = id;
